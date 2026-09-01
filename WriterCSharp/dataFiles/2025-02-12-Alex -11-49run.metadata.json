@@ -1,0 +1,16 @@
+{
+  "rpm": {
+    "description": "Engine speed measured by the ECU",
+    "units": "rpm",
+    "formatString": "%5.0f"
+  },
+  "vbat": {
+    "description": "Battery voltage",
+    "units": "V",
+    "formatString": "%4.2f"
+  },
+  "ect1": {
+    "description": "Engine coolant temperature",
+    "units": "\u00B0C"
+  }
+}

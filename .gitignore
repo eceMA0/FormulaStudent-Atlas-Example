@@ -1,0 +1,62 @@
+# ---------------------------------------------------------------------------
+# Secrets - never commit these
+# ---------------------------------------------------------------------------
+# Contains a GitHub token for the package feed.
+# Use NuGet.Config.template as the starting point.
+NuGet.Config
+*.pat
+key.info
+
+# ---------------------------------------------------------------------------
+# Telemetry data
+# ---------------------------------------------------------------------------
+# Logged runs are large and usually team-confidential. Commit the .metadata.json
+# describing your channels, but keep the raw logs out of the repository.
+WriterCSharp/dataFiles/*.csv
+!WriterCSharp/dataFiles/*.metadata.json
+
+# ---------------------------------------------------------------------------
+# .NET build output
+# ---------------------------------------------------------------------------
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.dll
+*.exe
+*.pdb
+*.cache
+project.lock.json
+project.assets.json
+*.nuget.props
+*.nuget.targets
+
+# ---------------------------------------------------------------------------
+# Visual Studio / Rider / VS Code
+# ---------------------------------------------------------------------------
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userprefs
+*.sln.docstates
+
+# ---------------------------------------------------------------------------
+# Python (optional analysis / plotting scripts)
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ---------------------------------------------------------------------------
+# OS noise
+# ---------------------------------------------------------------------------
+Thumbs.db
+desktop.ini
+.DS_Store
